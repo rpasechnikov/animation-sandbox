@@ -4,7 +4,6 @@ import './App.css'
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
-  const [animationDirection, setAnimationDirection] = useState(null);
 
   const animate = () => {
     setIsVisible(isVisible => !isVisible);
