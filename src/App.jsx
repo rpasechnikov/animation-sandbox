@@ -21,7 +21,23 @@ function App() {
   return (
     <div className='App'>
       <button onClick={animate}>Animate</button>
-      <div className={contentClassNames}>Content</div>
+      <div className={contentClassNames}>
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+        The quick brown fox jumps over the lazy dog. 
+      </div>
     </div>
   );
 }

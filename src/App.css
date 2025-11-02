@@ -11,20 +11,43 @@ body {
 }
 
 .App {
-  color: #72a24d;
   width: 400px;
   height: 200px;
-  border: 1px solid red;
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+
+  overflow: hidden;
+}
+
+.App button {
+  margin-bottom: 10px;
 }
 
 .content {
   border: 1px solid green;
+
+  overflow: auto;
+
+  /* 
+   * Timing instruction that animates changes of a property from one value to another over time.
+   * In this example, we animate the transform and background-color properties.
+   */
+  transition: transform 0.5s ease-in-out,
+              background-color 0.5s ease-in-out;
 }
 
+  /* "Visible" position - moves the element to the "normal" position */
 .content.visible {
   transform: translateX(0);
+  background-color: lightgoldenrodyellow;
 }
 
+/* "Hidden" position - moves the element outside of the viewport, to the right */
 .content.hidden {
-  transform: translateX(100%);
+  transform: translateX(calc(100% + 20px));
+  background-color: lightskyblue;
 }
